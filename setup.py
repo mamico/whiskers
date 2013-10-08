@@ -7,7 +7,7 @@ README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 
 requires = [
-    'pyramid',
+    'pyramid<1.5dev',
     'pyramid_tm',
     'pyramid_debugtoolbar',
     'python-dateutil',
@@ -15,6 +15,7 @@ requires = [
     'transaction',
     'waitress',
     'zope.sqlalchemy',
+    'cornice',
 ]
 
 setup(name='whiskers',
